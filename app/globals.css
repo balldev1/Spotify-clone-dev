@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+  background-color: black;
+  color-scheme: dark;
+}
+
+/* html: เป็นเลือกตั้งที่กำหนดสไตล์สำหรับตัวองค์ประกอบทั้งหมดของหน้า HTML ที่ใช้สไตล์ทั้งหมดในไฟล์ CSS นี้
+body: เป็นเลือกตั้งที่กำหนดสไตล์สำหรับตัวองค์ประกอบที่อยู่ภายในฟอร์ม body ของเอกสาร HTML
+:root: เป็นเลือกตั้งที่กำหนดสไตล์สำหรับส่วนรากของเอกสาร HTML (root element) */

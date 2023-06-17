@@ -1,0 +1,86 @@
+translate
+client ลูกค้า
+Path เส้นทาง
+hidden ซ่อน
+merge ผสาน
+fit พอดี
+Library ห้องสมุด
+truncate ตัด
+neutral เป็นกลาง
+layout เค้าโครง
+gradient ไล่ระดับสี
+back หลัง 
+forward ไปข้างหน้า
+extends ขยาย
+Attributes ลักษณะ
+transparent ความโปร่งใส
+disbled ไร้ความสามารถ
+navigation การนำทาง
+authentication รับรองความถูกต้อง
+before push ก่อน เพิ่ม
+lish รายการ
+fill เติม
+author ผู้เขียน
+policy นโยบาย
+bucketถัง
+allow อนุญาต
+payment การชำระเงิน
+bill ใบแจ้งหนี้
+types ลักษณะ
+quantity ลักษณะ
+period ระยะเวลา
+trial ทดลอง
+amount จำนวน
+unit หน่วย
+currency สกุลเงิน
+interval ช่วงเวลา
+Recurring คืนค่า
+subscription สมัครสมาชิด
+Context บริบท
+undefined ไม่กำหนด
+any ใดๆ
+ืnull ไม่มีค่า
+Settled ตัดสิน
+
+Promise สัญญา
+fulfilled สำเร็จ
+as เช่น
+Detail รายละเอียด
+--------
+css
+truncate ตัดข้อความที่ยาวเกิน
+gradient
+
+overflow-y-auto ช่วยให้ผู้ใช้สามารถเลื่อนเนื้อหาในแนวตั้งได้เมื่อเนื้อหา
+ยาวเกินกว่าพื้นที่ที่กำหนดให้แสดงผลได้ในตัวองค์ประกอบนั้น ๆ
+
+
+-----
+code
+'use client'; กำหนดว่าหลังคำสั่งนี้ทำงานส่วน client
+
+ md:hidden ซ้อนหน้าจอขนาดกลางขึ้นไป เล็กแสดง
+
+ การใช้คลาส fill ทำให้รูปภาพเต็มขอบและไม่มีส่วนที่โปร่งแสง (transparent)
+
+{...item} ส่งคืนค่าทุกคียของ router = label, icon, active,href
+Client 
+
+เมื่อเราระบุ React.ReactNode เป็นประเภทของ props
+ หรือผลลัพธ์ที่คอมโพเนนต์สามารถส่งกลับได้
+  จะทำให้เราสามารถส่งค่าข้อมูลที่เป็น children หรือองค์ประกอบอื่น ๆ 
+ไปยังคอมโพเนนต์นั้น ๆ ได้อย่างยืดหยุ่น โดยไม่จำกัดให้เป็นประเภทเดียวกันเท่านั้น
+ และสามารถรับข้อมูลต่าง ๆ ได้ตามความต้องการของแต่ละคอมโพเนนต์
+
+----
+ืnpm
+
+npm i @supabase/auth-helpers-next , npm install @supabase/auth-helpers-react
+จัดการการรับรองตัวตนและการเข้าสู่ระบบในแอปพลิเคชัน Next.js
+ ที่ใช้ Supabase เป็นระบบฐานข้อมูลและระบบการรับรองตัวตน
+
+ npm install stripe ชำระเงิน จัดการสมาชิก หรือประมวลผลธุรกรรมอื่น 
+
+------
+
+ip Image from 'next/image' ลดขนาดไฟล์รูปภาพและเพิ่มประสิทธิภาพการโหลดด้วยการปรับขนาดและการจัดการแคช 
