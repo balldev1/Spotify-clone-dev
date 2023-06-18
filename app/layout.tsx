@@ -29,21 +29,35 @@ export default async function RootLayout({
   const userSongs = await getSongsByUserId();
 
 
-
-  return (
-    <html lang="en">
-      <body className={font.className}>
-        <ToasterProvider />
-        <SupabaseProvider>
-          <UserProvider>
-            <ModalProvider products={products[]} />
-            <Sidebar songs={userSongs}>
-              {children}
-            </Sidebar>
-            <Player />
-          </UserProvider>
-        </SupabaseProvider>
-      </body>
-    </html>
+return (
+    <>
+      <ToasterProvider />
+      <SupabaseProvider>
+        <UserProvider>
+          <ModalProvider products={products} />
+          <Sidebar songs={userSongs}>
+            {children}
+          </Sidebar>
+          <Player />
+        </UserProvider>
+      </SupabaseProvider>
+    </>
   )
 }
+//   return (
+//     <html lang="en">
+//       <body className={font.className}>
+//         <ToasterProvider />
+//         <SupabaseProvider>
+//           <UserProvider>
+//             <ModalProvider products={products[]} />
+//             <Sidebar songs={userSongs}>
+//               {children}
+//             </Sidebar>
+//             <Player />
+//           </UserProvider>
+//         </SupabaseProvider>
+//       </body>
+//     </html>
+//   )
+// }
